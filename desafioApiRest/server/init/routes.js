@@ -14,4 +14,8 @@ router.get("/random", async(req, res) => {
     res.send(randomProduct);
 });
 
+router.get("/:id", async(req, res) => {
+    res.send(await data.getProductById(req.params.id));
+});
+
 module.exports = router;
