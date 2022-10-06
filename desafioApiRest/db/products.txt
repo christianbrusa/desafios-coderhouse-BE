@@ -1,0 +1,30 @@
+[{
+    "id": 1,
+    "title": "Nike Magista Obra II",
+    "price": 40000,
+    "thumbnail": "https://res.cloudinary.com/dycoseuyv/image/upload/v1648705117/redobra-removebg-preview_sxlvqd.png"
+},
+{
+    "id": 2,
+    "title": "Puma Future Z 1.1",
+    "price": 35000,
+    "thumbnail": "https://res.cloudinary.com/dycoseuyv/image/upload/v1650167663/bota-puma-future-bluejpg-removebg-preview_ifnybh.png"
+},
+{
+    "id": 3,
+    "title": "Puma King Platinum",
+    "price": 38000,
+    "thumbnail": "https://res.cloudinary.com/dycoseuyv/image/upload/v1653190928/kingblack_1-removebg-preview_ckx4an.png"
+},
+{
+    "id": 4,
+    "title": "Adidas X 19.1",
+    "price": 43000,
+    "thumbnail": "https://res.cloudinary.com/dycoseuyv/image/upload/v1650168195/Adidas-X-red-removebg-preview_qgrfs6.png"
+},
+{
+    "id": 5,
+    "title": "Adidas Predator 18+",
+    "price": 42000,
+    "thumbnail": "https://res.cloudinary.com/dycoseuyv/image/upload/v1653347506/predator__1-removebg-preview_ktsdmf.png"
+}]
