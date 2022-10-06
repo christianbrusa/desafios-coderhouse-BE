@@ -21,6 +21,11 @@ class Container {
         let random = Math.floor(Math.random()*data.length);
         return data[random];
     }
+
+    async getProductById(id){
+        const data = await this.readFile();
+        return data.filter(product => product.id == id);
+    }
     
 }
 
