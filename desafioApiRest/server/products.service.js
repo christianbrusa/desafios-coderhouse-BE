@@ -24,7 +24,13 @@ class Container {
 
     async getProductById(id){
         const data = await this.readFile();
-        return data.filter(product => product.id == id);
+        let product = data.filter(product => product.id == id);
+        if(product.length > 0){
+            return product;
+        }
+        else{
+            return {error: "Producto no encontrado"};
+        }
     }
     
 }
