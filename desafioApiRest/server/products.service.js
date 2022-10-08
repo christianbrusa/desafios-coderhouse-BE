@@ -32,6 +32,13 @@ class Container {
             return {error: "Producto no encontrado"};
         }
     }
+
+    async addProduct(product){
+        const data = await this.readFile();
+        product.id = data.length + 1;
+        data.push(product);
+        return await fs.promises.writeFile(`./db/${this.name_file}`, JSON.stringify(data));
+    }
     
 }
 
