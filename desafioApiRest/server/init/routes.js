@@ -18,4 +18,8 @@ router.get("/:id", async(req, res) => {
     res.send(await data.getProductById(req.params.id));
 });
 
+router.post("/", async(req, res) => {
+    res.send(await data.addProduct(req.body));
+});
+
 module.exports = router;
