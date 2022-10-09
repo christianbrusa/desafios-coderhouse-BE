@@ -46,6 +46,17 @@ class Container {
         return await fs.promises.writeFile(`./db/${this.name_file}`, JSON.stringify(newData));
     }
     
+    async updateProductById(id, modifiedProduct){
+        const data = await this.readFile();
+        data.forEach(product => {
+            if(product.id == id){
+                product.title = modifiedProduct.title;
+                product.price = modifiedProduct.price;
+                product.thumbnail = modifiedProduct.thumbnail;
+            }
+        });
+        return await fs.promises.writeFile(`./db/${this.name_file}`, JSON.stringify(data));
+    }
 }
 
 module.exports = Container;
