@@ -22,6 +22,10 @@ router.post("/", async(req, res) => {
     res.send(await data.addProduct(req.body));
 });
 
+router.put("/:id", async(req, res) => {
+    res.send(await data.updateProductById(req.params.id, req.body));
+});
+
 router.delete("/:id", async(req, res) => {
     res.send(await data.removeProductById(req.params.id));
 });
