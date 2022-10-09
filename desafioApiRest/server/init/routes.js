@@ -22,4 +22,8 @@ router.post("/", async(req, res) => {
     res.send(await data.addProduct(req.body));
 });
 
+router.delete("/:id", async(req, res) => {
+    res.send(await data.removeProductById(req.params.id));
+});
+
 module.exports = router;
