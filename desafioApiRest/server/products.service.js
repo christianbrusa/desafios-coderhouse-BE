@@ -39,6 +39,12 @@ class Container {
         data.push(product);
         return await fs.promises.writeFile(`./db/${this.name_file}`, JSON.stringify(data));
     }
+
+    async removeProductById(id){
+        const data = await this.readFile();
+        const newData = data.filter(product => product.id != id);
+        return await fs.promises.writeFile(`./db/${this.name_file}`, JSON.stringify(newData));
+    }
     
 }
 
